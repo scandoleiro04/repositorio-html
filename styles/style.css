@@ -68,3 +68,20 @@ main {
 .social-icons img:hover {
     transform: scale(1.2);
 }
+.sobre button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 2px solid var(--cor-secundaria);
+    background: transparent;
+    color: var(--cor-secundaria);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    transition: 0.3s;
+}
+
+.sobre button:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branca);
+}
