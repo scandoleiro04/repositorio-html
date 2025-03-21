@@ -120,3 +120,19 @@ footer {
     width: 100%;
     margin-top: 40px;
 }
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .conteudo, .perfil-lateral {
+        width: 100%;
+    }
+
+    .foto-perfil {
+        width: 100px;
+        height: 100px;
+        top: -50px;
+    }
+}
