@@ -35,3 +35,12 @@ header {
 .subtitulo {
     font-size: 1.2rem;
 }
+main {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
