@@ -26,3 +26,12 @@ header {
     text-align: center;
     padding: 20px;
 }
+.titulo {
+    font-size: 3rem;
+    color: var(--cor-primaria);
+    font-weight: bold;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+}
