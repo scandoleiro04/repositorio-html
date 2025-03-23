@@ -1,31 +1,37 @@
 :root {
-    --cor-primaria: #0096A5;
-    --cor-secundaria: #E75B3A;
+    --cor-primaria: #5000a5;
+    --cor-secundaria: #9f3ae7;
     --cor-texto: #333;
     --cor-branca: #ffffff;
     --fonte-principal: 'Arial', sans-serif;
     --border-radius: 10px;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    --bg-color: #f8f8f8; 
 }
 
 body {
     font-family: var(--fonte-principal);
-    background-color: #f8f8f8;
+    background-color: var(--bg-color);
     color: var(--cor-texto);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s; 
 }
+
+body.dark-theme {
+    --bg-color: #121212; 
+    --cor-texto: #f8f8f8; 
+    --cor-branca: #121212; 
+}
+
+
 body.dark-mode {
-    --cor-texto: #f8f8f8;
-    --cor-branca: #121212;
-    --cor-fundo: #222;
+    --bg-color: #121212;
+    --cor-texto: #ffffff;
+    --button-bg: #5d00ff;
+    --button-text: #000000;
 }
 
 button {
@@ -41,10 +47,12 @@ button:hover {
     background-color: var(--cor-secundaria);
     color: var(--cor-branca);
 }
+
 header {
     text-align: center;
     padding: 20px;
 }
+
 .titulo {
     font-size: 3rem;
     color: var(--cor-primaria);
@@ -54,8 +62,10 @@ header {
 .subtitulo {
     font-size: 1.2rem;
 }
+
 main {
     display: flex;
+    flex: 1;
     width: 80%;
     max-width: 1200px;
     justify-content: space-between;
@@ -87,6 +97,7 @@ main {
 .social-icons img:hover {
     transform: scale(1.2);
 }
+
 .sobre button {
     margin-top: 10px;
     padding: 10px 20px;
@@ -104,6 +115,7 @@ main {
     background-color: var(--cor-secundaria);
     color: var(--cor-branca);
 }
+
 .perfil-lateral {
     background: var(--cor-secundaria);
     color: var(--cor-branca);
@@ -131,14 +143,16 @@ main {
     font-size: 1.5rem;
     font-weight: bold;
 }
+
 footer {
     text-align: center;
     padding: 20px;
     background: #333;
     color: var(--cor-branca);
     width: 100%;
-    margin-top: 40px;
+    margin-top: auto;
 }
+
 @media (max-width: 768px) {
     main {
         flex-direction: column;
